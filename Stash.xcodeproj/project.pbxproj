@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		641CCC062B9B01910029420E /* StashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641CCC052B9B01910029420E /* StashApp.swift */; };
-		641CCC082B9B01910029420E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641CCC072B9B01910029420E /* ContentView.swift */; };
+		641CCC082B9B01910029420E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641CCC072B9B01910029420E /* MainView.swift */; };
 		641CCC0A2B9B01910029420E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 641CCC092B9B01910029420E /* Assets.xcassets */; };
 		641CCC0D2B9B01910029420E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 641CCC0C2B9B01910029420E /* Preview Assets.xcassets */; };
+		64E11A332B9B49A6005B6663 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E11A322B9B49A6005B6663 /* DashboardView.swift */; };
+		64E11A372B9B5260005B6663 /* DashboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E11A362B9B5260005B6663 /* DashboardCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		641CCC022B9B01910029420E /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		641CCC052B9B01910029420E /* StashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashApp.swift; sourceTree = "<group>"; };
-		641CCC072B9B01910029420E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		641CCC072B9B01910029420E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		641CCC092B9B01910029420E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		641CCC0C2B9B01910029420E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64E11A322B9B49A6005B6663 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		64E11A362B9B5260005B6663 /* DashboardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,10 @@
 			isa = PBXGroup;
 			children = (
 				641CCC052B9B01910029420E /* StashApp.swift */,
-				641CCC072B9B01910029420E /* ContentView.swift */,
+				64E11A2E2B9B48B9005B6663 /* Views */,
+				64E11A312B9B48D7005B6663 /* Manager */,
+				64E11A302B9B48CB005B6663 /* DataModel */,
+				64E11A2F2B9B48C0005B6663 /* UIComponents */,
 				641CCC092B9B01910029420E /* Assets.xcassets */,
 				641CCC0B2B9B01910029420E /* Preview Content */,
 			);
@@ -65,6 +72,53 @@
 				641CCC0C2B9B01910029420E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64E11A2E2B9B48B9005B6663 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				641CCC072B9B01910029420E /* MainView.swift */,
+				64E11A342B9B49AC005B6663 /* Dashboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64E11A2F2B9B48C0005B6663 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				64E11A352B9B524C005B6663 /* Dashboard */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		64E11A302B9B48CB005B6663 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		64E11A312B9B48D7005B6663 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		64E11A342B9B49AC005B6663 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				64E11A322B9B49A6005B6663 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		64E11A352B9B524C005B6663 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				64E11A362B9B5260005B6663 /* DashboardCard.swift */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +191,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				641CCC082B9B01910029420E /* ContentView.swift in Sources */,
+				64E11A372B9B5260005B6663 /* DashboardCard.swift in Sources */,
+				641CCC082B9B01910029420E /* MainView.swift in Sources */,
+				64E11A332B9B49A6005B6663 /* DashboardView.swift in Sources */,
 				641CCC062B9B01910029420E /* StashApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
