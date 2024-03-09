@@ -35,9 +35,9 @@ struct DashboardCard: View {
             .padding(20)
         }
         .frame(maxWidth: .infinity, maxHeight: 200)
-        .background(LinearGradient(colors: [Color(.accent), .purple, .red],
+        .background(LinearGradient(colors: [.pink, .purple, .red],
                                    startPoint: .bottomLeading,
-                                   endPoint: .topTrailing))
+                                   endPoint: .topTrailing).brightness(0.12))
         .clipShape(RoundedRectangle(cornerRadius: 16))
         .padding()
     }
