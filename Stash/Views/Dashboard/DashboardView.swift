@@ -32,6 +32,30 @@ struct DashboardView: View {
                 
                 VStack{
                     DashboardCard()
+                    VStack{
+                        HStack{
+                            Text("Subscription")
+                                .font(.headline)
+                                .fontWeight(.semibold)
+                                .foregroundStyle(.black)
+                            Spacer()
+                            Button(action: {
+                                // show all subscription
+                            }, label: {
+                                Image(systemName: "arrow.right")
+                                    .foregroundStyle(.black)
+                            })
+                        }.padding()
+                        
+                        
+                        Spacer()
+                        
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: 100)
+                    .background(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                    .shadow(color: .gray, radius: 2, x: 0, y: 0)
+                    .padding(.horizontal)
                     Spacer()
                 }
             }

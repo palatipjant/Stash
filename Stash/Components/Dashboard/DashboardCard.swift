@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct DashboardCard: View {
+    
+    @State private var month_amount = 29391.20
+    
     var body: some View {
         VStack(alignment: .leading){
             HStack{
@@ -25,7 +28,7 @@ struct DashboardCard: View {
                         .font(.title3)
                         .fontWeight(.semibold)
                         .foregroundStyle(.white)
-                    Text("$1000.00")
+                    Text("฿ \(month_amount, specifier: "%.2f")")
                         .font(.title)
                         .fontWeight(.black)
                         .foregroundStyle(.white)
@@ -38,7 +41,12 @@ struct DashboardCard: View {
         .background(LinearGradient(colors: [.pink, .purple, .red],
                                    startPoint: .bottomLeading,
                                    endPoint: .topTrailing).brightness(0.12))
-        .clipShape(RoundedRectangle(cornerRadius: 16))
+        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         .padding()
     }
+}
+
+
+#Preview {
+    DashboardCard()
 }
