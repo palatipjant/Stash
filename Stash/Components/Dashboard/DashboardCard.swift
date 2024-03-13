@@ -40,9 +40,9 @@ struct DashboardCard: View {
         .frame(maxWidth: .infinity, maxHeight: 200)
         .background(LinearGradient(colors: [.pink, .purple, .red],
                                    startPoint: .bottomLeading,
-                                   endPoint: .topTrailing).brightness(0.12))
+                                   endPoint: .topTrailing).brightness(0.17).opacity(0.95))
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-        .padding()
+        .padding(.horizontal)
     }
 }
 
