@@ -61,8 +61,6 @@
 			children = (
 				641CCC052B9B01910029420E /* StashApp.swift */,
 				64E11A2E2B9B48B9005B6663 /* Views */,
-				64E11A312B9B48D7005B6663 /* Manager */,
-				64E11A302B9B48CB005B6663 /* DataModel */,
 				64E11A2F2B9B48C0005B6663 /* Components */,
 				641CCC092B9B01910029420E /* Assets.xcassets */,
 				641CCC0B2B9B01910029420E /* Preview Content */,
@@ -111,20 +109,6 @@
 				64E11A352B9B524C005B6663 /* Dashboard */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		64E11A302B9B48CB005B6663 /* DataModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataModel;
-			sourceTree = "<group>";
-		};
-		64E11A312B9B48D7005B6663 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Manager;
 			sourceTree = "<group>";
 		};
 		64E11A342B9B49AC005B6663 /* Dashboard */ = {

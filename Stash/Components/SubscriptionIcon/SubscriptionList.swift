@@ -53,11 +53,11 @@ struct SubscriptionList: View {
                                 .resizable()
                                 .frame(width: 30, height: 30)
                                 .scaledToFit()
+                                .offset(x: 10)
                     }
                     Spacer()
                 }
             }
-            .padding(.leading)
             
             Spacer()
         }
